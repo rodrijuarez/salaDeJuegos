@@ -20,8 +20,11 @@
 			<h3>Ingreso a la sala</h3>
 			
 		<form method="POST" action="destino.php">
-					<input type="text" placeholder="Ingrese usuario" name="usuario">
-
+					<input type="text" placeholder="Ingrese usuario" name="usuario"
+					value="<?php if (isset($_COOKIE['ultimoUsuario'])){
+						echo $_COOKIE['ultimoUsuario'];
+					}?>">
+ 
 					<input type="submit"  class="MiBotonUTNMenuInicio" value= "ingresar" > 
 		</form>
 		</div>

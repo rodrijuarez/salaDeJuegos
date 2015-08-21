@@ -4,7 +4,7 @@
 		echo $_SESSION["usuario"];
 	}
 	else{
-		header("Location: index.html");
+		header("Location: index.php");
 	}
 ?>
 <!DOCTYPE html>
