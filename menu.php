@@ -1,3 +1,12 @@
+<?php
+	session_start();
+	if(isset($_SESSION["usuario"])){
+		echo $_SESSION["usuario"];
+	}
+	else{
+		header("Location: index.html");
+	}
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -31,8 +40,8 @@
 
 			</form>
 
-
 		</div>
+		<a href="logout.php">Salir</a>
 
 		<center>
 
